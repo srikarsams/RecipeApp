@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+/* Base Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333333;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 1.6rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+    color: #396684;
+}
+
+/* Container */
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+	width: 100%;
+	height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 85% 85% / 30%;
+}
+
+header .overlay {
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    padding-bottom: 9rem;
+    color: #fff;
+    text-shadow: 2px 2px 2px #333;
+    background-image: url("https://images.pexels.com/photos/988865/pexels-photo-988865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    /* background-position-y: -60rem; */
+    background-position-y: -80rem;
+    background-position-x: -10rem;
+    background-repeat: no-repeat;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+	font-size: 8rem;
+	margin-bottom: 3rem;
+}
+
+header h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    font-style: italic;
+}
+
+.ingred-h3
+{
+    /* font-family: 'Dancing Script', cursive; */
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+/* Actions Bar */
+
+.actions {
+
+    padding: .8rem
+}
+
+.actions__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    max-width: 60rem;
+    margin: 0 auto;
+    min-height: 3rem;
+    padding: 0 1.6rem;
+}
+
+.actions__container--spaced {
+    justify-content: space-between
+}
+
+
+
+/* Form Inputs */
+/* New */
+.input_hp
+{
+    border: none;
+    width: 80%;
+    height: 6rem;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: gray;
+    background: white;
+    border-radius: 1rem;
+    /* box-shadow: 0px 8px 15px rgba(75, 72, 72, 0.1); */
+    box-shadow: 0px 9px 20px rgba(75, 72, 72, 0.1);
+    transition: all 0.4s ease;
+    margin: 0 auto;
+}
+
+.ingred_input
+{
+    height: 4rem;
+    font-size: 1.3rem;
+    width: 60%;
+}
+
+.input_hp:focus
+{
+    outline: none;
+    box-shadow: 0px 9px 25px rgba(75, 72, 72, 0.3);
+}
+
+.input {
+    border: 1px solid #DEDFE0;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    margin-right: .8rem;
+    padding: .4rem .8rem;
+}
+
+.dropdown {
+    border-radius: 0;
+    border: 1px solid #DEDFE0;
+    background: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    margin-right: .8rem;
+}
+
+.button {
+    background: #43799c;
+    border: none;
+    border-bottom: 1px solid #396684;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .6rem .8rem;
+    transition: background .3s ease;
+}
+
+.button_hp
+{
+    background: #FDE45F;
+    padding: 0;
+    height: 6rem;
+    width: 6rem;
+    text-align: center;
+    border: none;
+    font-size: 3rem;
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 8px 15px 0 rgba(75, 72, 72, 0.2);
+    transition: 0.3s all ease-in-out;
+}
+
+.button_hp:hover
+{
+    box-shadow: 0 8px 15px 0 rgba(75, 72, 72, 0.3);
+}
+
+.button-ingred-del
+{
+    background: red;
+    border-radius: 1rem;
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    position: absolute; 
+    right: -2rem;
+    top: 0.125rem;
+}
+
+.button-ingred-del img
+{
+    height: 3rem;
+    width: 3rem;
+}
+
+.ingred_button
+{
+    border-radius: .6rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    width: auto;
+    padding: 1rem 1rem;
+    color: black;
+}
+
+.button_delete
+{
+    background: red;
+}
+
+img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+}
+
+.button:hover {
+    background: #396684;
+}
+
+.button--secondary {
+    background: #888888;
+    border-bottom: 2px solid #717171;
+}
+
+.button--secondary:hover {
+    background: #6E6E6E;
+}
+
+/* Note editor */
+
+
+
+.title-input {
+    border: none;
+    font-size: 1.8rem;
+    color: gray;
+    display: block;
+    margin: 2.4rem 0;
+    padding: 1rem 2rem;
+    height: 6rem;
+    width: 100%;
+    box-shadow: 0px 9px 20px rgba(75, 72, 72, 0.1);
+    transition: all 0.4s ease;
+}
+
+.title-input:focus
+{
+    outline: none;
+    box-shadow: 0px 9px 25px rgba(75, 72, 72, 0.3);
+}
+
+.body-input {
+    border: none;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 300;
+    display: block;
+    margin: 2.4rem 0;
+    min-height: 15rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    box-shadow: 0px 9px 20px rgba(75, 72, 72, 0.1);
+    transition: all 0.4s ease;
+}
+.body-input:focus
+{
+    outline: none;
+    box-shadow: 0px 9px 25px rgba(75, 72, 72, 0.3); 
+}
+
+/* Note List Item */
+
+#recipes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    text-decoration: none;
+    width: 27rem;
+    background: #FDE45F;
+    color: #000;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    border-radius: 10px;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),
+                .3s box-shadow,
+                .3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 1.4rem 8rem 1.8rem 3.6rem;
+    display: inline-block;
+    background-image: url("../images/icon.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 8rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.list-item:hover {
+    top: -1px;
+    /* transform: scale(1.01); */
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.ingred-list-item
+{
+    width: 70%;
+    margin: 1rem auto;
+    display: flex;
+    background-image: none;
+    background: #fff;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    transition: 0.3s all ease;
+    font-weight: bold;
+    background: lightgray;
+}
+
+input[type='checkbox']{
+    height: 2rem;
+    border-radius: 50%;
+    width: 2rem;
+}
+
+.ingred-list-item .ingred-span
+{
+    padding-left: 1rem;
+    display: inline-block;
+}
+
+.green
+{
+    background: #6ac259;
+    color: #fff;
+}
+
+.list-item__title {
+    font-size: 1.8rem;
+    margin-bottom: .4rem;
+    font-weight: bold;
+}
+
+.list-item__subtitle {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.empty-message {
+    text-align: center;
+    margin: 3.2rem 0;
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Edit page input button */
+.ingredient-input .button {
+    border-radius: 2px;
+    border: none
+}
+
+.ingredient-input {
+    margin-bottom: 20rem;
+}
+
+#add-ingredient{
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;  
+}

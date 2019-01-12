@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Recipe</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <h1>Recipe App</h1>
+            <h3>Best way to track your delicious recipes</h3>
+        </div>
+    </header>
+    <div class="actions">
+        <div class="actions__container actions__container--spaced">
+            <a class="button_hp" href="/index.html"><img src="./images/arrow_back_white_36x36.png" alt=""></a>
+            <button id="remove-recipe" class="button_hp button_delete"><img src="./images/delete_white_36x36.png" alt=""></button>
+        </div>
+    </div>
+    <div class="container">
+        <input type="text" placeholder="Recipe title" id="recipe-title" class="title-input">
+        <textarea id="recipe-body" placeholder="Enter text here" class="body-input"></textarea>
+        <h3 class="ingred-h3">Ingredients</h3>
+        <div id="ingredients">
+
+        </div>
+        <div class="ingredient-input">
+            <form id="add-ingredient">
+                <input type="text" placeholder="Add ingredient here" name="ingredientItem" class="input_hp ingred_input">
+                <button class="button_hp ingred_button">Add Ingredient</button>
+            </form>
+        </div>
+        
+        
+    </div>
+
+    <script src="./scripts/edit-bundle.js"></script>
+</body>
+</html>
